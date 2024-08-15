@@ -5,43 +5,45 @@ body {
     height: 100vh;
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
-    padding: 10%;
+    padding: 1%; 
 }
 
 .calculator {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    max-width: 300px;
+    gap: 8px; 
+    max-width: 250px; 
     margin: 0 auto;
-    background: #979696;
-    padding: 20px;
+    background: linear-gradient(145deg, #e0e0e0, #646060); 
+    padding: 15px; 
     border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    border-color: #1c1c1e;
-    border-style: solid;
-    border-width: 5px;
+    box-shadow: 
+        0px 10px 20px rgba(0, 0, 0, 0.25), 
+        inset 0px -5px 10px rgba(0, 0, 0, 0.2), 
+        inset 0px 5px 10px rgba(255, 255, 255, 0.1); 
+    border: 2px solid #1c1c1e; 
 }
+
 
 .display {
     grid-column: span 4;
     background: #9bed95;
-    padding: 15px;
-    font-size: 2em;
+    padding: 10px; 
+    font-size: 1.8em; 
     text-align: right;
     border-radius: 5px;
 }
 
 button {
-    background: #F2E7D5; /* Light cream color for the buttons */
+    background: #F2E7D5; 
     border: none;
-    font-size: 1.5em;
-    padding: 20px;
+    font-size: 1.3em; 
+    padding: 15px; 
     cursor: pointer;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     transition: all 0.2s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    color: #2C3E50; /* Dark text color for contrast */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    color: #2C3E50; 
 }
 
 button.operator {
@@ -66,11 +68,13 @@ button:active {
 .title {
     grid-column: span 4;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.6em; 
     font-weight: bold;
-    padding: 10px;
-    background: #131613;
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    padding: 9px; 
+    background: linear-gradient(145deg, #bdbdbd, #8d8d8d); 
+    color: #291e1e; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+    box-shadow: inset 0px 3px 5px rgba(51, 51, 51, 0.2); 
+    border: 2px solid #99999e; 
 }
