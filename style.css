@@ -35,7 +35,7 @@ body {
 }
 
 button {
-    background: #F2E7D5; 
+    background: linear-gradient(145deg, #faf7e5, #fff8c4);
     border: none;
     font-size: 1.3em; 
     padding: 15px; 
@@ -43,18 +43,25 @@ button {
     border-radius: 10px; 
     transition: all 0.2s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
-    color: #2C3E50; 
+    color: #192531; 
 }
 
 button.operator {
-    background: #ff4081;
+    background: linear-gradient(145deg, #928f8f, #000000);
     color: #fff;
 }
 
 button.equals {
-    background: #4caf50;
+    background: linear-gradient(135deg, #e58f8f, #960808);
     color: #fff;
     grid-column: span 2;
+    font-size: 2em; 
+    padding: 10px 0; 
+    height: 50px; 
+    width: 100%; 
+    text-align: center; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
 }
 
 button:hover {
